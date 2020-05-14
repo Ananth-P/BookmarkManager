@@ -1,0 +1,268 @@
+{
+	"info": {
+		"_postman_id": "396b4ad3-dfa6-4bcf-9125-bcd84936137a",
+		"name": "BookmarkManager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/_api/create_customer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo2LCJ1c2VybmFtZSI6InF3ZXJ0eSIsImV4cCI6MTU4OTUyODYwMSwiZW1haWwiOiJhZmFmbEBnbWFpbC5jb20iLCJvcmlnX2lhdCI6MTU4OTQ0MjIwMX0.mcpzxeJ23Cw718IbsJ6f1aQ8cBXqnortVtGV4fc1w7U",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"An\",\n    \"last_name\": \"rit\",\n    \"email\": \"anritl.com\",\n    \"username\": \"anrit\",\n    \"password\": \"qwerty@123\",\n    \"mobile_no\": 8989126789,\n    \"latitude\": \"12.9093\",\n    \"longitude\": \"80.0247\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/_api/create_customer",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"_api",
+						"create_customer"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8000/_api/create_customer",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo2LCJ1c2VybmFtZSI6InF3ZXJ0eSIsImV4cCI6MTU4OTUyODYwMSwiZW1haWwiOiJhZmFmbEBnbWFpbC5jb20iLCJvcmlnX2lhdCI6MTU4OTQ0MjIwMX0.mcpzxeJ23Cw718IbsJ6f1aQ8cBXqnortVtGV4fc1w7U",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"first_name\": \"An\",\n    \"last_name\": \"rit\",\n    \"email\": \"anritl.com\",\n    \"username\": \"anrit\",\n    \"password\": \"qwerty@123\",\n    \"mobile_no\": 8989126789,\n    \"latitude\": \"12.9093\",\n    \"longitude\": \"80.0247\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/_api/create_customer",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"_api",
+								"create_customer"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 14 May 2020 13:17:06 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.2"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "65"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Success\",\n    \"message\": \"Customer created successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:8000/_api/login_customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n\t\"username\":\"anrit\",\n\t\"password\":\"qwerty@123\"\n\t\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/_api/login_customer",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"_api",
+						"login_customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/_api/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMSwidXNlcm5hbWUiOiJhbnJpdCIsImV4cCI6MTU4OTU0ODg1OCwiZW1haWwiOiJhbnJpdGwuY29tIiwib3JpZ19pYXQiOjE1ODk0NjI0NTh9.qBVhojb_rOCzxw8vGAkGoNclbue6zW_s5cIT8IuFLrM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"title\":\"Technical\",\n\"url\":\"https://www.stackoverflow.com\",\n\"source_name\":\"stackoverflow reference\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/_api/create",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"_api",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/_api/browse?latitude=38.7510&longitude=-98.8220&radius=3&customer_id=7",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/_api/browse?latitude=38.7510&longitude=-98.8220&radius=3&customer_id=7",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"_api",
+						"browse"
+					],
+					"query": [
+						{
+							"key": "source_name",
+							"value": "ljsddsd",
+							"disabled": true
+						},
+						{
+							"key": "url",
+							"value": "hdfaf",
+							"disabled": true
+						},
+						{
+							"key": "title",
+							"value": "a",
+							"disabled": true
+						},
+						{
+							"key": "date_range",
+							"value": "2020-05-14 1:53:28.255572\n",
+							"disabled": true
+						},
+						{
+							"key": "latitude",
+							"value": "38.7510"
+						},
+						{
+							"key": "longitude",
+							"value": "-98.8220"
+						},
+						{
+							"key": "radius",
+							"value": "3"
+						},
+						{
+							"key": "customer_id",
+							"value": "7"
+						},
+						{
+							"key": "sort_by",
+							"value": "title",
+							"disabled": true
+						},
+						{
+							"key": "sort_dir",
+							"value": "Asc",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
